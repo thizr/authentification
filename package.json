@@ -1,0 +1,22 @@
+{
+  "name": "authentification",
+  "version": "1.0.0",
+  "description": "Authentification service",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "thizr",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.2",
+    "mongoose-unique-validator": "^3.0.0"
+  }
+}
