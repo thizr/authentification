@@ -5,11 +5,10 @@ const input = (req, res, next) =>{
 
     const validatiionRules = {
         "firstName" : "string|min:3",
-        "lastName" : "string|min:3",
+        "lastName" : "string|min:2",
         "email" : "email",
         "phone" : "string|phone",
         "password" : "string|min:6|strict",
-        "cardNumber" : "string|cardNumber"
     }
 
     validator(req.body, validatiionRules, {}, (error, status)=>{
@@ -28,6 +27,3 @@ const input = (req, res, next) =>{
 module.exports = {
     input,
 }
-
-
-// /^7[05678]\d{7}$/

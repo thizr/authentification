@@ -4,7 +4,6 @@ const jwt = require('jsonwebtoken')
 
 
 exports.sign_up = (req, res)=>{
-    console.log(req.body.password)
     bcrypt.hash(req.body.password, 10)
     .then(hash=>{
         const user = new userSchema({
