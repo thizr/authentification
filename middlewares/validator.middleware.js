@@ -9,6 +9,7 @@ const input = (req, res, next) =>{
         "email" : "email",
         "phone" : "string|phone",
         "password" : "string|min:6|strict",
+        "cardNumber" : "string|cardNumber"
     }
 
     validator(req.body, validatiionRules, {}, (error, status)=>{
